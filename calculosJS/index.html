@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="estilos.css" >
+    <title>Calculadora Básica</title>
+</head>
+<body>
+    <h1> .: Calculadora Básica :.</h1>
+    <hr>
+    <form id="calcForm">
+        <br>
+        <label for="numero1">Número 1:</label>
+        <input type="number" id="n1" required><br><br>
+        <label for="numero2">Número 2:</label>
+        <input type="number" id="n2" required><br><br>
+        <label for="operacion">Operación:</label>
+        <select id="operacion" name="operacion">
+            <option value="suma">Suma</option>
+            <option value="resta">Resta</option>
+            <option value="multiplicacion">Multiplicación</option>
+            <option value="division">División</option>
+        </select><br><br>
+
+        <!-- Cambiar el tipo de botón a "button" en lugar de "submit" -->
+        <button type="button" onclick="calcular()">Calcular</button>
+        <br>
+        <hr>
+        <p id="resultado"></p>
+    </form>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
